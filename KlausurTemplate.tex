@@ -1,0 +1,40 @@
+%\documentclass{klausur}
+\documentclass[answers]{klausur}
+
+\setlength{\hoffset}{-0.7cm}
+\setlength{\textwidth}{17.cm}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\parindent}{0em}
+\setlength{\voffset}{-2.cm}
+\setlength{\headheight}{120pt}
+\pagestyle{headandfoot}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Lösung:}\par\noindent}
+
+\begin{document}
+
+	% Parameters: Name of exam, Semester
+	\setExamHeaderAndFooter{Beck/Protogerakis}{Klausur Fach ABC (11031)}{WiSe 2024/25}
+	
+	% Parameters: Name of exam, Semester, Date, Time, Result table (depending on number of problems)
+	\makeExamTitlePage{Klausur Fach ABC (11031)}{WiSe 2024/25}{24.01.2025}{10:30 - 12:00}{
+	{\large 
+		\gradetable[h][questions]
+	}}{Prof. Dr.-Ing. Beck/Prof. Dr.-Ing. M. Protogerakis}
+	
+	% Parameters: Duration of exam, number of problems, number of pages, number of allowed hand-written pages
+	
+	\makeExamRulesPage{90}{\numquestions}{\numpages}{2}
+	
+	\newpage
+
+\include{Formelsammlung}
+
+\begin{aufgaben}
+		
+\include{aufgabe_xyz/aufgabe_xyz}
+ 
+\end{aufgaben}
+\end{document}
+
